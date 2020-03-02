@@ -51,3 +51,5 @@ git config --global user.name "Bright"
 git config --global user.email dglpw7546@gmail.com
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=10800'
+
+sudo sed -i 's|http://tw.archive.ubuntu.com/ubuntu/|http://free.nchc.org.tw/ubuntu/|g' /etc/apt/sources.list
