@@ -6,7 +6,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 cat << EOF >> ~/.bashrc
 export VISUAL=vim
-export EDITOR="$VISUAL"
+export EDITOR='$VISUAL'
 EOF
 
 cat << EOF >> ~/.bash_profile
@@ -53,3 +53,4 @@ git config --global user.email dglpw7546@gmail.com
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=10800'
 
+source ~/.bashrc
