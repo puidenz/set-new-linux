@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo sed -i 's|http://tw.archive.ubuntu.com/ubuntu/|http://free.nchc.org.tw/ubuntu/|g' /etc/apt/sources.list
 sudo apt update
 sudo apt install -y vim tmux htop curl wget git putty
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
@@ -52,4 +53,3 @@ git config --global user.email dglpw7546@gmail.com
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=10800'
 
-sudo sed -i 's|http://tw.archive.ubuntu.com/ubuntu/|http://free.nchc.org.tw/ubuntu/|g' /etc/apt/sources.list
