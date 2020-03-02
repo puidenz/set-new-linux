@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo sed -i 's|http://tw.archive.ubuntu.com/ubuntu/|http://free.nchc.org.tw/ubuntu/|g' /etc/apt/sources.list
-sudo apt update
+sudo apt update && apt upgrade
 sudo apt install -y vim tmux htop curl wget git putty ssh
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
