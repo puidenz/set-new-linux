@@ -3,18 +3,18 @@ sudo apt update
 sudo apt install -y vim tmux htop curl wget git putty
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-echo << EOF >> ~/.bashrc
+cat << EOF >> ~/.bashrc
 export VISUAL=vim
 export EDITOR="$VISUAL"
 EOF
 
-echo << EOF >> ~/.bash_profile
+cat << EOF >> ~/.bash_profile
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 EOF
 
-echo << EOF >> ~/.vimrc
+cat << EOF >> ~/.vimrc
 set ai
 set bg=dark
 set nu
@@ -27,7 +27,7 @@ inoremap ' ''<LEFT>
 inoremap " ""<LEFT>
 EOF
 
-echo << EOF >> ~/.tmux.conf
+cat << EOF >> ~/.tmux.conf
 set -g default-terminal "screen-256color"
 set -g mouse on
 
