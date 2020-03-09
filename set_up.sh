@@ -1,12 +1,13 @@
 #!/bin/bash
 sudo sed -i 's|http://tw.archive.ubuntu.com/ubuntu/|http://free.nchc.org.tw/ubuntu/|g' /etc/apt/sources.list
+sed -i 's|# force_color_prompt=yes|force_color_prompt=yes|g' ~/.bashrc
 sudo apt update && apt upgrade
 sudo apt install -y vim tmux htop curl wget git putty ssh
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 cat << EOF >> ~/.bashrc
 export VISUAL=vim
-export EDITOR='$VISUAL'
+export EDITOR=\$VISUAL
 EOF
 
 cat << EOF >> ~/.bash_profile
