@@ -2,7 +2,7 @@
 sudo sed -i 's|http://tw.archive.ubuntu.com/ubuntu/|http://free.nchc.org.tw/ubuntu/|g' /etc/apt/sources.list
 sed -i 's|#force_color_prompt=yes|force_color_prompt=yes|g' ~/.bashrc
 sudo apt update && sudo apt upgrade
-sudo apt install -y vim tmux htop curl wget git putty ssh
+sudo apt install -y vim tmux htop curl wget git putty ssh tshark wireshark iperf3
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 cat << EOF >> ~/.bashrc
